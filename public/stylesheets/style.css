@@ -1,0 +1,27 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+
+.details-tb {
+    list-style-type: none;
+    margin: auto
+}
+
+.details-div,
+#main_1,
+#main_2 {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    /* width: 500px; */
+}
+
+h1,
+h2 {
+    text-align: center;
+}

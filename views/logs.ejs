@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery-3.0.0.min.js"></script>
+    <style>
+        .logs-ul {
+            list-style-type: none
+        }
+        
+        .logs-div {
+            margin: 0 auto;
+            /* width: 500px; */
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+    <div class="logs-div">
+        <% if (logs.length) { %>
+            <ul class="logs-ul">
+                <% logs.forEach(function(logs){ %>
+                    <li>
+                        <%= logs.time %>
+                            <%= logs.msg %>
+                                <%= logs.status   %>
+                    </li>
+                    <% }) %>
+            </ul>
+            <% } %>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery-3.0.0.min.js"></script>
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+    <p>EJS Welcome to
+        <%= title %>
+    </p>
+
+    <%- /*
+    <textarea rows="30" cols="100" id='menutext'>
+</textarea>
+    <button type="button" onclick="menu()"> 重置菜单</button>
+    <script>
+        function menu() {
+            var text = $("#menutext").val()
+            $.ajax({
+                type: "POST",
+                url: "/loadMenu",
+                // async: true,
+                data: {
+                    text: text
+                },
+                dataType: 'json',
+                success: function(data) {
+                    console.log(data)
+                }
+            })
+        }
+</script>
+*/
+ -%>
+</body>
+
+</html>
